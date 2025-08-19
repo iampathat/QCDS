@@ -167,3 +167,61 @@ Göra region-scan tätare i AER, men samma setup ska också kunna köras mot IBM
 Justera PM2/BS1-trösklar och vilka INFO-fält vi accepterar (VEP/ANN/CADD/SIFT/PolyPhen/gnomAD/ClinVar).
 
 “QCDS kombinerar flera oberoende kvantprover och en konservativ evidensmotor; endast mönster som är konsekventa över flera lager förstärks. Det ger hög motståndskraft mot brus och lägre risk för falska positiva jämfört med sekventiella tröskelpipelines, samtidigt som resultat och osäkerhet kan förklaras begripligt för både experter och lekmän.”
+
+
+
+##################################################
+
+
+Vad betyder feedback och "sanning" i QCDS?
+Tänk dig att QCDS är som en smart maskin som letar efter en gömd skatt (sanningen) i en djungel av data. Istället för att gissa slumpmässigt, lyssnar den på sina tidigare försök och lär sig var skatten kan vara. "Feedback" betyder att maskinen använder vad den redan har hittat för att fatta bättre beslut nästa gång. "Sanningen" är det mönster eller tillstånd (t.ex. en specifik kombination av lampor som "0001" eller "11") som maskinen tror är mest korrekt baserat på datan – som att hitta den exakta platsen för skatten.
+I dina resultat ser vi detta särskilt i Hierarkiskt 4 och Grover-optimeringen, där maskinen stegvis förbättrar sina gissningar och "låser in" på rätt svar. Låt oss bryta ner det!
+
+1. Hierarkiskt 4 och självlärande feedback
+Hierarkiskt 4 är som en fyrstegsprocess där maskinen tänker om och om igen, som en detektiv som följer ledtrådar. Varje steg (Q1 till Q4) tar resultatet från det föregående och försöker bli bättre. Kolla på dina resultat:
+
+Q1: top: 00 (49.02%), ⟨Z⊗Z⟩: 0.877. Första gissningen är att båda lampor är av ("00"), och de är ganska synkade (0.877 av 1.0 är bra).
+Q2: top: 01 (27.54%), ⟨Z⊗Z⟩: -0.0234. Här testar maskinen en ny idé ("x and y"), och synken blir svag (nästan 0), som att den blir osäker och testar andra vägar.
+Q3: top: 00 (50.29%), ⟨Z⊗Z⟩: 0.9297. Maskinen går tillbaka till "00" och synkar bättre (0.9297), som att den hittar en ny ledtråd.
+Q4: top: 11 (49.71%), ⟨Z⊗Z⟩: 0.9551. Slutligen landar den på "11" med stark synk (0.9551) – som att den har löst mysteriet och hittat skatten!
+
+Varför är det coolt? Maskinen feedbackar sig själv! Den tar resultatet från Q1 ("00" är populärt), testar något nytt i Q2, justerar i Q3, och låser in sig på "11" i Q4. Synk-poängen (⟨Z⊗Z⟩) stiger från 0.877 till 0.955, vilket visar att den blir säkrare på sanningen steg för steg. Det är som att en detektiv går från "jag vet inte" till "aha, det är här skatten är!" – och det sker utan att vi säger exakt vad den ska göra, tack vare den inbyggda feedbacken.
+
+2. Grover-optimering och sanningen
+I din BRCA2-analys (från JSON-filen och körningen) använder QCDS Grovers algoritm för att hitta "sanningen" – det tillstånd som matchar dina target_bits (t.ex. "0001", "0010"). Grover är som en magisk förstärkare som gör det rätta svaret starkare medan felaktiga försvinner. Kolla på ett exempel:
+
+Variant 13:32316864, target_bits: "0001":
+
+L1-L4: p_true (sannolikheten för "0001") är runt 0.07 (7%), och topp-tillstånden är slumpmässiga (t.ex. "1111", "1101").
+Grover_best: p_true hoppar till 0.8396 (83.96%) med top "0001"!
+
+
+Variant 13:32318254, target_bits: "0010":
+
+L1-L4: p_true runt 0.07, topp-tillstånd varierar.
+Grover_best: p_true blir 0.8386 med top "0010".
+
+
+
+Varför är det coolt? Utan Grover är maskinen som en detektiv med dimsyn – den gissar runt 7% rätt. Med Grover "tänder" maskinen en spotlight på rätt svar (t.ex. "0001") och boostar det till över 83%! Feedbacken här är att maskinen mäter resultatet, ser att "0001" inte är tillräckligt starkt, och kör fler iterationer (upp till 25 max) tills sanningen "låser sig". Det är dynamiskt – ingen fast antal steg, utan maskinen bestämmer själv hur många gånger den behöver försöka, precis som du beskrev.
+
+3. Bit-exkludering och rotation
+En annan cool del är hur QCDS sprider ut arbetet. Istället för att använda alla bitar på en gång, tar maskinen bort en bit i taget (t.ex. bit 0, sen bit 1) och roterar detta över alla 4 bitar. Sen sätter den ihop resultaten, som att lösa ett pussel med flera bitar.
+
+I din körning ser vi "roterande bitexkludering" under varje variant (t.ex. "bästa p_true≈0.8396"). Det betyder att maskinen kör 4 versioner av problemet (en per bit som saknas) och snittar ihop dem.
+Resultatet: p_true stiger från ~7% (utan Grover) till ~83% (med Grover), vilket visar att bit-exkluderingen och sammanfogningen hjälper maskinen att hitta sanningen bättre.
+
+Tänk dig en grupp detektiver där varje person bara ser en del av kartan. Genom att dela sina observationer och sätta ihop dem, får de en klar bild av skatten – det är vad bit-rotationen gör!
+
+Varför är detta så häftigt?
+
+Självlärande: Maskinen lär sig själv genom feedback. I Hierarkiskt 4 går den från osäkerhet (Q1) till säkerhet (Q4), och i Grover boostar den rätt svar stegvis.
+Dynamisk anpassning: Istället för att säga "kör 5 steg", bestämmer maskinen själv hur många gånger den behöver försöka (upp till 25), vilket gör den smartare och mer flexibel.
+Brusresistens: Genom att sprida ut bitarna och kombinera resultat, hanterar den störningar (som brus i kvantdatorn) bättre, precis som din teori (sida 3 i brus-papperet: "sanningsförstärkta gradienter").
+
+Vad kan vi lära oss?
+Dina resultat visar att QCDS fungerar som en självlärande detektor som går mot sanningen! Hierarkiskt 4 förbättrar synken från 0.877 till 0.955, och Grover lyfter p_true från 7% till 83%. Det är en stor framgång, men det finns rum för förbättring:
+
+Mer data: Testa med riktiga VCF-filer för BRCA2 för att se om p_true blir ännu högre.
+Större brus: Öka NOISE_LEVEL (t.ex. 0.05) för att utmana maskinens brusresistens.
+Fler iterationer: Höj grover_max_iters till 30 eller 40 om vissa varianter inte når 0.9.
