@@ -220,7 +220,7 @@ Dynamisk anpassning: Istället för att säga "kör 5 steg", bestämmer maskinen
 Brusresistens: Genom att sprida ut bitarna och kombinera resultat, hanterar den störningar (som brus i kvantdatorn) bättre, precis som din teori (sida 3 i brus-papperet: "sanningsförstärkta gradienter").
 
 Vad kan vi lära oss?
-Dina resultat visar att QCDS fungerar som en självlärande detektor som går mot sanningen! Hierarkiskt 4 förbättrar synken från 0.877 till 0.955, och Grover lyfter p_true från 7% till 83%. Det är en stor framgång, men det finns rum för förbättring:
+Resultat visar att QCDS fungerar som en självlärande detektor som går mot sanningen! Hierarkiskt 4 förbättrar synken från 0.877 till 0.955, och Grover lyfter p_true från 7% till 83%. Det är en stor framgång, men det finns rum för förbättring:
 
 Mer data: Testa med riktiga VCF-filer för BRCA2 för att se om p_true blir ännu högre.
 Större brus: Öka NOISE_LEVEL (t.ex. 0.05) för att utmana maskinens brusresistens.
