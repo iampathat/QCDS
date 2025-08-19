@@ -1,5 +1,19 @@
 # QCDS
 
+
+Inference Is All You Need
+Creators
+
+    Sundblom, Patrik (Researcher)
+    ORCID icon
+
+Description
+
+QCDS enables a new class of computation — one where problems are not solved through iterative search or statistical approximation, but through the direct amplification of semantic alignment. Rather than accumulating patterns, the system strengthens directional coherence across conditional quantum states. This paradigm unlocks application domains where classical AI remains inefficient, opaque, or brittle.
+
+To support this inference model, the companion paper Mathematics and Logic of QCDS formalizes the underlying geometry — introducing amplitude, angle, and coherence as measurable vectors of truth. Together, these works establish not only a new architecture for intelligence, but a unified language for synthesizing logic, structure, and resonance.
+
+
 Quantum Condition-Driven Synthesis
 
 QCDS is built to let many small pieces of evidence “vote” at the same time and let wave interference (the quantum thing) amplify what is consistent and dampen what is contradictory. If/when it works as intended, this will be superior because you get both better signal-to-noise and fewer false alarms – without losing traceability. Here’s why, in plain English:
