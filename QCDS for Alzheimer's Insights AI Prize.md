@@ -97,4 +97,25 @@ Efficient use: Track via quarterly reports, prioritize milestones with 80/20 rul
 Further Support Needed: Partnerships with quantum hardware providers (e.g., xAI/IBM for >1,000 qubits) and ADRD biologists for validation cohorts. Additional funding for team expansion (e.g., AI engineer).
 
 
+# Question -----------------
+
+Prototype Development (Months 1-3): Implement QCDS in Qiskit, validating on simulated ADRD analogs (e.g., APP/PSEN1 mutations) with p_true >0.6 in 12-qubit models, as in current results (p_true 0.6538 for PTEN_R233X analogs). Led by Patrik Sundblom as lead AI engineer and solo developer.
+
+Data Integration & Testing (Months 4-6): Integrate AD Workbench datasets (e.g., ADNI genomics) for agentic inference, achieving 100% agreement on mutation patterns. Patrik Sundblom handles core coding.
+
+Quantum Scaling (Months 7-9): Transition to IBM Brisbane (127 qubits) for exome regions, demonstrating 10x speedup over classical NGS, with Patrik Sundblom optimizing for hardware as primary AI engineer.
+
+Validation & Dissemination (Months 10-12): Cross-validate with classical tools (e.g., GATK), by Patrik-
+
+Utilization of Prize Support
+Funding ($100K): Allocate 40% to quantum cloud access (IBM/Amazon Braket), 30% to computational resources for simulations, 20% to data curation from AD Workbench, 10% to open-source tools. This supports Patrik Sundblom’s volunteer work ("fritidsarbete"), providing initial financial viability.
+Data Access: Leverage AD Workbench for ADNI/UKB genomic datasets, integrating directly into QCDS oracles for real-time inference.
+Mentorship: Collaborate with ADDI experts for ADRD-specific tuning, ensuring ethical AI.
+Efficient Use: Track via quarterly reports, prioritize milestones with 80/20 rule (80% effort on core quantum inference).
+
+Further Support Needed
+Significant Funding: A dedicated investment of $1000K is critical for Patrik Sundblom to transition from voluntary  to full-time development. This ensures financial security and sustained progress, given the personal stakes driving this work.
+Team Expansion: Additional AI engineers or ADRD biologists to support Patrik, whose solo efforts face resistance due to QCDS’s controversial nature—challenging established methods and potentially "setting sticks in the wheels for many" in traditional genomics.
+
+
 
