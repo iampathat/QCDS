@@ -1,7 +1,7 @@
 # Proof of Concept: QCDS Quantum Advantage for Exome Analysis
 
 ## Overview
-This Proof of Concept (PoC) demonstrates the quantum advantage of the Quantum Circuit for DNA Sequencing (QCDS), a novel framework developed by Patrik, over classical methods for analyzing the exome (the protein-coding regions of the human genome, ~30-60 million base pairs). QCDS leverages quantum superposition and Grover's amplification to search all possible mutation combinations simultaneously, a task infeasible for classical computers. This PoC is based on extensive discussions and simulations conducted up to **08:20 AM CEST, Thursday, August 21, 2025**.
+This Proof of Concept (PoC) demonstrates the quantum advantage of the Quantum Circuit for DNA Sequencing (QCDS), a novel framework developed by Patrik, over classical methods for analyzing the exome (the protein-coding regions of the human genome, ~30-60 million base pairs). QCDS leverages quantum superposition and Grover's amplification to search all possible mutation combinations simultaneously, a task infeasible for classical computers. This PoC is based on extensive discussions and simulations conducted up to **Thursday, August 21, 2025**.
 
 ## Problem Statement
 - **Classical Limitation**: Traditional tools (e.g., GATK, Annovar) can quickly identify known mutations in the exome (e.g., PTEN_R233X at chr10:89,687,000-89,715,000) using existing BED files, taking hours on a supercomputer. However, searching all possible mutations or interactions (4^60e6 combinations) exceeds classical memory and time constraints (years to centuries).
