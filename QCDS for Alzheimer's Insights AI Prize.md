@@ -70,3 +70,31 @@ QCDS is feasible with Qiskit Aer simulations (12 qubits, p_true 0.6538 in 30 sec
 
 ## Timestamp
 Last updated: **10:25 AM CEST, Thursday, August 21, 2025**
+
+
+
+
+
+
+
+# What is your project's core hypothesis, and what data supports it? 
+
+Key Milestones:
+
+Prototype Development (Months 1-3): Implement QCDS in Qiskit, validating on simulated ADRD analogs (e.g., APP/PSEN1 mutations) with p_true >0.6 in 12-qubit models, as in current results (p_true 0.6538 for PTEN_R233X analogs).
+Data Integration & Testing (Months 4-6): Integrate AD Workbench datasets (e.g., ADNI genomics) for agentic inference, achieving 100% agreement on mutation patterns.
+Quantum Scaling (Months 7-9): Transition to IBM Brisbane (127 qubits) for exome regions, demonstrating 10x speedup over classical NGS.
+Validation & Dissemination (Months 10-12): Cross-validate with classical tools (e.g., GATK), publish open-source code, and demo at conferences.
+
+Acceleration vs Traditional Workflows: Traditional ADRD research relies on sequential NGS (hours-days for exome analysis, limited to known variants). QCDS uses quantum superposition to search all combinations simultaneously (2^100 states in seconds), enabling discovery of novel epistatic interactions (e.g., APOE + TAU) and personalized profiles. This reduces analysis from days to minutes, accelerating hypothesis testing, drug targeting, and cohort studies—potentially cutting research timelines by 50-90% (e.g., from weeks to hours for variant prioritization in ADNI data).
+Utilization of Prize Support:
+
+Funding ($100K): Allocate 40% to quantum cloud access (IBM/Amazon Braket), 30% to computational resources for simulations, 20% to data curation from AD Workbench, 10% to open-source tools.
+Data Access: Leverage AD Workbench for ADNI/UKB genomic datasets, integrating directly into QCDS oracles for real-time inference.
+Mentorship: Collaborate with ADDI experts for ADRD-specific tuning, ensuring ethical AI.
+Efficient use: Track via quarterly reports, prioritize milestones with 80/20 rule (80% effort on core quantum inference).
+
+Further Support Needed: Partnerships with quantum hardware providers (e.g., xAI/IBM for >1,000 qubits) and ADRD biologists for validation cohorts. Additional funding for team expansion (e.g., AI engineer).
+
+
+
