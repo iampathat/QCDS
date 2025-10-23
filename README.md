@@ -9,7 +9,7 @@ Inference Is All You Need
 Creators
 
     Sundblom, Patrik (Researcher)
-    ORCID icon
+    ORCID https://orcid.org/0009-0008-9180-0957
 
 Description
 
