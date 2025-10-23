@@ -114,7 +114,7 @@ Mentorship: Collaborate with ADDI experts for ADRD-specific tuning, ensuring eth
 Efficient Use: Track via quarterly reports, prioritize milestones with 80/20 rule (80% effort on core quantum inference).
 
 Further Support Needed
-Significant Funding: A dedicated investment of $1000K is critical for Patrik Sundblom to transition from voluntary  to full-time development. This ensures financial security and sustained progress, given the personal stakes driving this work.
+Significant Funding: None
 Team Expansion: Additional AI engineers or ADRD biologists to support Patrik, whose solo efforts face resistance due to QCDS’s controversial nature—challenging established methods and potentially "setting sticks in the wheels for many" in traditional genomics.
 
 
