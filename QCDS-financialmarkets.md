@@ -130,5 +130,3 @@ This would represent the ultimate competitive advantage — a capability that co
 
 ---
 
-Would you like me to polish this into a **formal whitepaper style** (academic tone, layout-ready for PDF with abstract, executive summary, and figures), or should it remain in this analytical essay format?
-
