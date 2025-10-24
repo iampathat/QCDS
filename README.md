@@ -6,6 +6,8 @@
 QCDS is licensed under MIT (code) and CC BY 4.0 (theory). Any derivative work (e.g., Quantum Echoes) must attribute Patrik Sundblom and link to this repository <a href="https://zenodo.org/records/15455541" target="_blank" rel="noopener noreferrer nofollow"></a>.
 
 Inference Is All You Need
+https://zenodo.org/records/15455541
+
 Creators
 
     Sundblom, Patrik (Researcher)
