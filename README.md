@@ -8,6 +8,9 @@ QCDS is licensed under MIT (code) and CC BY 4.0 (theory). Any derivative work (e
 Inference Is All You Need
 https://zenodo.org/records/15455541
 
+Read book draft for easy explanation
+https://github.com/iampathat/QCDS/blob/main/draft20250909.md
+
 Creators
 
     Sundblom, Patrik (Researcher)
