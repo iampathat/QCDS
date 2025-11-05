@@ -2,30 +2,11 @@
 
 # QCDS (Quantum Condition-Driven Synthesis)
 
-**License and Attribution**  
-QCDS is licensed under MIT (code) and CC BY 4.0 (theory). Any derivative work (e.g., Quantum Echoes) must attribute Patrik Sundblom and link to this repository <a href="https://zenodo.org/records/15455541" target="_blank" rel="noopener noreferrer nofollow"></a>.
+> **Note on Attribution**  
+> Quantum Condition-Driven Synthesis (QCDS) is released under **CC BY 4.0**.  
+> Any system replicating its four-phase synthesis logic — *condition formation, conditional evolution, recursive inference, and truth-alignment verification* — is considered a derivative work and must attribute **Patrik Sundblom** and link to  
+> [https://github.com/iampathat/QCDS](https://github.com/iampathat/QCDS) · [https://zenodo.org/records/15455541](https://zenodo.org/records/15455541)
 
-## Attribution Clause – Substrate-Independent Definition
-
-**Quantum Condition-Driven Synthesis (QCDS)** is **defined** as a substrate-independent epistemic architecture.  
-Any framework, system, or implementation that reproduces its four-phase synthesis process — condition formation, conditional evolution, recursive inference, and truth-alignment verification — constitutes a **derived expression of the QCDS framework**, irrespective of whether it operates in quantum hardware, FPGA emulation, classical GPU inference, or symbolic logic environments.
-
-As such, all derivative or functionally isomorphic implementations remain subject to the **attribution requirements of the Creative Commons Attribution 4.0 International (CC BY 4.0)** license under which QCDS is released.
-
-> **Legal Notice:**  
-> This clause clarifies the scope of attribution under CC BY 4.0 and does not modify or supersede the original license terms.  
-> It explicitly affirms that QCDS is the defining reference model for substrate-independent recursive synthesis processes.
-
-Inference Is All You Need
-https://zenodo.org/records/15455541
-
-Read book draft for easy explanation
-https://github.com/iampathat/QCDS/blob/main/draft20250909.md
-
-Creators
-
-    Sundblom, Patrik (Researcher)
-    ORCID https://orcid.org/0009-0008-9180-0957
 
 Description
 
