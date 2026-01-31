@@ -20,7 +20,7 @@ While optional, the RFC enables agents that:
 
 This establishes a clear path from a general theory of superintelligence to **concrete, deployable systems**.
 
-
+---
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
