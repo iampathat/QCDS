@@ -6,7 +6,7 @@ The **Whitepaper and RFC** are now released, explicitly formalizing a **blueprin
 
 This release clarifies how superintelligent behavior can be implemented through structured conditions, constraints, and state transitions — independent of any specific embodiment. **Agents are not required**, but represent a **powerful and natural realization path** of the blueprint.
 
-📄 Documents available at:  
+📄 Whitepaper with included RFC-package available only at:  
 [https://zenodo.org/records/18436167](https://zenodo.org/records/18436167)
 
 ### 🤖 Agents as a Realization Path
