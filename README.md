@@ -1,6 +1,6 @@
 # QCDS (Quantum Condition-Driven Synthesis)
 
-## 📰 Update 2026-01-31: Whitepaper and RFC Released
+## 📰 Update 2026-01-31: Whitepaper with included RFC-package Released
 
 The **Whitepaper and RFC** are now released, explicitly formalizing a **blueprint for superintelligence**.
 
