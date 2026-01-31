@@ -1,5 +1,27 @@
 # QCDS (Quantum Condition-Driven Synthesis)
 
+## 📰 Update 2026-01-31: Whitepaper and RFC Released
+
+The **Whitepaper and RFC** are now released, explicitly formalizing a **blueprint for superintelligence**.
+
+This release clarifies how superintelligent behavior can be implemented through structured conditions, constraints, and state transitions — independent of any specific embodiment. **Agents are not required**, but represent a **powerful and natural realization path** of the blueprint.
+
+📄 Documents available at:  
+[https://zenodo.org/records/18436167](https://zenodo.org/records/18436167)
+
+### 🤖 Agents as a Realization Path
+
+While optional, the RFC enables agents that:
+
+- Implement the **superintelligence blueprint** as an operational system  
+- Act as **condition- and state-driven entities**, not prompt-bound generators  
+- Align via a **shared, versioned epistemic contract**  
+- Scale from single-agent reasoning to **coherent multi-agent superintelligence**
+
+This establishes a clear path from a general theory of superintelligence to **concrete, deployable systems**.
+
+
+
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 > **Note on Attribution**  
