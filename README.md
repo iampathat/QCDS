@@ -56,8 +56,24 @@ It explicitly affirms that **QCDS** is the defining reference model for substrat
 > *Inference Is All You Need*  
 > [https://zenodo.org/records/15455541](https://zenodo.org/records/15455541)
 
-For an accessible explanation, see the book draft:  
+~~For an accessible explanation, see the book draft:  
 [https://github.com/iampathat/QCDS/blob/main/draft20250909.md](https://github.com/iampathat/QCDS/blob/main/draft20250909.md)
+~~
+## 2026 - The Book - The Fun Part of the Story
+
+Started with the paper "Inference Is All You Need" on Zenodo in early 2025.  
+Grew into a full book explaining why everything might just be resonant inference.
+
+**Quantum Condition-Driven Synthesis and the Theory of the Universe**  
+Syntract – The Operating System of the Universe  
+
+A simple, open take on reality as a truth-driven OS. No walls, no gatekeeping.
+
+Available in print on Amazon:  
+https://www.amazon.com/dp/B0GK9PLCCK
+
+(Kindle version not released yet.)
+
 
 **Creator**  
 **Sundblom, Patrik** (Researcher)  
