@@ -69,11 +69,8 @@ Syntract – The Operating System of the Universe
 
 A simple, open take on reality as a truth-driven OS. No walls, no gatekeeping.
 
-Available in print on Amazon:  
+Available in print, kindle, kindle unlimited on Amazon:  
 https://www.amazon.com/dp/B0GK9PLCCK
-
-(Kindle version not released yet.)
-
 
 **Creator**  
 **Sundblom, Patrik** (Researcher)  
